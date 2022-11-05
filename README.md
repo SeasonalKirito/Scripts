@@ -7,7 +7,7 @@ last updated for Project V.1
 
  ## Booting the script
 ```lua
-loadstring(game:HttpGet("https://pastebin.com/raw/xypf3VEF"))();
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SeasonalKirito/Project-Season/main/Project%20Season.lua"))();
 ```
 
  ## Review
