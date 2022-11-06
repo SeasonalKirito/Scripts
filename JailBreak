@@ -63,6 +63,16 @@ local Window = Rayfield:CreateWindow({
         end,
     })
 
+    -----
+
+    local Button = Tab:CreateButton({
+        Name = "FPS BOOSTER",
+        Callback = function()
+            Rayfield:Notify("Loaded", "FPS BOOSTER has been loaded", 9649923610) -- Title, Content, Image
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/SeasonalKirito/Scripts/main/FPS%20Booster"))()
+        end,
+    })
+
 
 
     -----Universal Scripts-----
